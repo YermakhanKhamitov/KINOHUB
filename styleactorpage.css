@@ -20,6 +20,50 @@ a {
     transition: color 0.3s;
 }
 
+.achievements-container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "content content"
+        "footer footer";
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr; /* Одна колонка для контента */
+    gap: 15px;
+    padding: 20px;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+h3 {
+    grid-area: header;
+    text-align: center;
+}
+
+.achievements-grid {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 30px;
+}
+
+.achievement-award {
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 8px 10px;
+    border-radius: 8px;
+}
+
+.achievement-details {
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 8px 10px;
+    border-radius: 8px;
+}
+
+footer {
+    grid-area: footer;
+}
+
 a:hover {
     color: #ffb74d !important;
 }
