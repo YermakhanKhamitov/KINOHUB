@@ -90,6 +90,49 @@ h1 {
     max-width: 900px;
     margin: 0 auto;
 }
+.watcheck {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+.watcheck h3 {
+    grid-column: 1 / span 2;
+    text-align: center;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.watched,
+.nonwatched {
+    display: grid;
+    place-items: center;
+    height: 60px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.watched p,
+.nonwatched p {
+    margin: 0;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.watched:hover,
+.nonwatched:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
 
 .film-item {
     display: flex;
