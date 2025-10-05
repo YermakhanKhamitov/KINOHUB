@@ -2,44 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>kinohub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinohub - Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="top-bar">
-    <a href="../MainPage/index.html"><span class="site-name">KINOHUB</span></a>
-    <form class="search-form" action="/search" method="get">
-        <input type="search" name="query" placeholder="Search films...">
-        <button type="submit">&#x1F50D;</button>
-    </form>
-    <div class="nav-buttons">
-        <a href="../FavoritesPage/kinohubfav.html"><button>Favorites</button></a>
-        <a href="../MainPage/index.html"><button>Menu</button></a>
-        <button>Settings</button>
-        <a href="moviehub.html"><button>Profile</button></a>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+    <div class="container-fluid px-lg-5">
+        <a class="navbar-brand text-warning fw-bold fs-4" href="../MainPage/index.html">KINOHUB</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <form class="d-flex me-3 mt-2 mt-lg-0" action="/search" method="get">
+                <div class="input-group">
+                    <input class="form-control bg-transparent text-white border-warning" type="search" name="query" placeholder="Search films...">
+                    <button class="btn btn-outline-warning" type="submit">&#x1F50D;</button>
+                </div>
+            </form>
+            <div class="btn-group">
+                <a href="../FavoritesPage/kinohubfav.html" class="btn btn-outline-warning btn-sm">Favorites</a>
+                <a href="../MainPage/index.html" class="btn btn-outline-warning btn-sm">Menu</a>
+                <a href="#" class="btn btn-outline-warning btn-sm">Settings</a>
+                <a href="moviehub.html" class="btn btn-outline-warning btn-sm">Profile</a>
+            </div>
+        </div>
     </div>
-</div>
-<div id="main">
-<img src="../Images/pfp.png" class="pfp"><div class="username">
-    <div class="username">
-        <h3>Nursultan</h3>
-        <button type="button">&#9999;</button>
+</nav>
+
+<div class="container mt-5 pt-5">
+    <div class="row bg-dark bg-opacity-50 p-4 rounded shadow-lg mb-4 text-center">
+        <div class="col-lg-4">
+            <img src="../Images/pfp.png" class="img-fluid rounded-circle" alt="Profile Picture">
+        </div>
+        <div class="col-lg-8 text-start">
+            <h1 class="text-warning fw-bold">Nursultan</h1>
+            <p>
+                Username: Nursultan<br>
+                Status: Active user<br>
+                Member since: 2024<br>
+            </p>
+            <hr class="text-white">
+        </div>
+    </div>
+
+    <nav class="nav nav-pills justify-content-center mb-4">
+        <a class="nav-link text-white bg-dark bg-opacity-50 me-2" href="#">Profile</a>
+        <a class="nav-link text-white bg-dark bg-opacity-50 me-2" href="#">Activity</a>
+        <a class="nav-link text-white bg-dark bg-opacity-50 me-2" href="#">Reviews</a>
+        <a class="nav-link text-white bg-dark bg-opacity-50 me-2" href="#">Watchlist</a>
+        <a class="nav-link text-white bg-dark bg-opacity-50" href="#">Likes</a>
+    </nav>
+
+    <div class="row text-center">
+        <h3 class="text-white mb-4">Watchlist</h3>
+        <div class="col-6 col-md-4 col-lg-2 mb-3">
+            <img src="../Images/732071450_photo_1758172750378.jpg" class="img-fluid rounded shadow-sm">
+            <p class="text-white mt-2">SuperErma</p>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 mb-3">
+            <img src="../Images/project_x-p630878.jpg" class="img-fluid rounded shadow-sm">
+            <p class="text-white mt-2">Project X</p>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 mb-3">
+            <img src="../Images/hacksawridgepic.jpg" class="img-fluid rounded shadow-sm">
+            <p class="text-white mt-2">Hacksaw Ridge</p>
+        </div>
     </div>
 </div>
 
-<nav class="profile-nav">
-    <ul>
-        <li>Profile</li>
-        <li>Activity</li>
-        <li>Reviews</li>
-        <li>Watchlist</li>
-        <li>Likes</li>
-    </ul>
-</nav>
-</div>
-</body>
-<hr>
-<footer>
-    <center><font size="3" style="color: white">2025 Baktiyar, Yermakhan, Yerassyl. All rights reserved.</font></center>
+<hr class="text-white">
+<footer class="text-center text-white py-3 bg-dark bg-opacity-50">
+    <small>2025 Baktiyar, Yermakhan, Yerassyl. All rights reserved.</small>
 </footer>
+
+</body>
 </html>

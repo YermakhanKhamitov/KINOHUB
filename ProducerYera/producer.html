@@ -2,73 +2,98 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>producer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinohub - about producer</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styleproducer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<div class="top-bar">
-    <a href="../MainPage/index.html"><span class="site-name">KINOHUB</span></a>
-    <form class="search-form" action="/search" method="get">
-        <input type="search" name="query" placeholder="Search films...">
-        <button type="submit">&#x1F50D;</button>
-    </form>
-    <div class="nav-buttons">
-        <a href="../FavoritesPage/kinohubfav.html"><button>Favorites</button></a>
-        <a href="../MainPage/index.html"><button>Menu</button></a>
-        <button>Settings</button>
-        <a href="../ProfilePage/moviehub.html"><button>Profile</button></a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+    <div class="container-fluid px-lg-5">
+        <a class="navbar-brand text-warning fw-bold fs-4" href="../MainPage/index.html">KINOHUB</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <form class="d-flex me-3 mt-2 mt-lg-0" action="/search" method="get">
+                <div class="input-group">
+                    <input class="form-control bg-transparent text-light border-warning" type="search" name="query" placeholder="Search films...">
+                    <button class="btn btn-outline-warning" type="submit">&#x1F50D;</button>
+                </div>
+            </form>
+            <div class="btn-group">
+                <a href="../FavoritesPage/kinohubfav.html" class="btn btn-outline-warning btn-sm">Favorites</a>
+                <a href="../MainPage/index.html" class="btn btn-outline-warning btn-sm">Menu</a>
+                <a href="#" class="btn btn-outline-warning btn-sm">Settings</a>
+                <a href="../ProfilePage/moviehub.html" class="btn btn-outline-warning btn-sm">Profile</a>
+            </div>
+        </div>
     </div>
-</div>
-<div id="main">
+</nav>
 
-    <div class="profile-container">
-        <div class="profile-left-column">
-            <img src="../Images/Producer.jpg" class="profile-pic">
+<div class="container mt-5 pt-5">
+    <div class="row align-items-start bg-dark bg-opacity-50 p-4 rounded shadow-lg mb-4">
+        <div class="col-lg-6 text-center">
+            <img src="../Images/Producer.jpg" class="img-fluid rounded" alt="producer photo" width="300" height="400">
         </div>
-
-        <div class="profile-right-column">
-            <h1 class="main-title">Yerassyl Gaziz</h1>
-
-            <h2 class="section-title">About Person</h2>
-            <div class="details-grid">
-                <div class="detail-label">Career</div>
-                <div class="detail-value">Producer, Screenwriter, Director, Cinematographer, Actor, Composer</div>
-                <div class="detail-label">Height</div>
-                <div class="detail-value">1.88 m</div>
-                <div class="detail-label">Date of Birth</div>
-                <div class="detail-value">22 may, 2007 ~ 18 years</div>
-                <div class="detail-label">Place of Birth</div>
-                <div class="detail-value">Almaty, Kazakhstan</div>
-                <div class="detail-label">Wife</div>
-                <div class="detail-value">Aya Shalkar</div>
-            </div>
-
-            <div class="films-section">
-                <h2 class="section-title">Best Movies</h2>
-                <ul class="film-list">
-                    <li>SuperErma</li>
-                    <li>YesMan</li>
-                    <li>The Mask</li>
-                    <li>Jumanji</li>
-                </ul>
-            </div>
-        </div>
-        <div class="films">
-            <a href="../SuperErmaPage/superErma.html"><img src="../Images/poster1.jpg"></a>
-            <img src="../Images/poster2.jpeg">
-            <img src="../Images/poster3.jpg">
-            <img src="../Images/poster4.jpg">
-            <img src="../Images/poster5.jpg">
-            <img src="../Images/poster6.jpg">
+        <div class="col-lg-6">
+            <h1 class="text-warning fw-bold">Yerassyl Gaziz</h1>
+            <p>
+                Career: Producer, Screenwriter, Director, Cinematographer, Actor, Composer<br><br>
+                Date of Birth: 22 May 2007 (~18 years)<br><br>
+                Place of Birth: Almaty, Kazakhstan<br><br>
+                Height: 1.88 m<br><br>
+                Wife: Aya Shalkar
+            </p>
+            <hr class="text-white">
         </div>
     </div>
 
+    <p>Yerassyl Gaziz was born on May 22, 2007, in Almaty, Kazakhstan. From a young age, he showed talent in filmmaking and the arts, which led him to become a multi-talented producer, director, and actor.</p>
+    <p>He has worked on a variety of films, showcasing his versatility both behind and in front of the camera. His dedication to cinema has earned him recognition in local and international projects.</p>
 
+    <h3 class="text-center text-white mt-5">Best Movies:</h3>
+    <div class="row justify-content-center g-3 mb-4">
+        <div class="col-6 col-md-4 col-lg-2"><img src="../Images/poster1.jpg" class="img-fluid rounded shadow-sm"></div>
+        <div class="col-6 col-md-4 col-lg-2"><img src="../Images/poster2.jpeg" class="img-fluid rounded shadow-sm"></div>
+        <div class="col-6 col-md-4 col-lg-2"><img src="../Images/poster3.jpg" class="img-fluid rounded shadow-sm"></div>
+        <div class="col-6 col-md-4 col-lg-2"><img src="../Images/poster4.jpg" class="img-fluid rounded shadow-sm"></div>
+        <div class="col-6 col-md-4 col-lg-2"><img src="../Images/poster5.jpg" class="img-fluid rounded shadow-sm"></div>
+        <div class="col-6 col-md-4 col-lg-2"><img src="../Images/poster6.jpg" class="img-fluid rounded shadow-sm"></div>
+    </div>
 
+    <h3 class="text-center text-white">Social Networks of Producer:</h3>
+    <div class="text-center mb-5">
+        <a href="https://www.instagram.com/yerassyl_gaziz" target="_blank" class="text-warning fw-bold text-decoration-none">Instagram</a>
+    </div>
 </div>
-</body>
-<hr>
-<footer>
-    <center><font size="3" style="color: white">2025 Baktiyar, Yermakhan, Yerassyl. All rights reserved.</font></center>
+
+<div class="container bg-dark bg-opacity-50 p-4 rounded mb-5">
+    <h3 class="text-center text-white mb-4">Producer's Achievements</h3>
+    <div class="row text-white">
+        <div class="col-lg-4 col-md-6 mb-3">
+            <p class="bg-black bg-opacity-50 p-2 rounded">Best Director Award</p>
+            <p class="bg-black bg-opacity-50 p-2 rounded">2024 for "SuperErma"</p>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-3">
+            <p class="bg-black bg-opacity-50 p-2 rounded">Best Screenwriter</p>
+            <p class="bg-black bg-opacity-50 p-2 rounded">2023 for "YesMan"</p>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-3">
+            <p class="bg-black bg-opacity-50 p-2 rounded">Rising Star Award</p>
+            <p class="bg-black bg-opacity-50 p-2 rounded">2022 for "The Mask"</p>
+        </div>
+    </div>
+</div>
+
+<hr class="text-white">
+<footer class="text-center text-white py-3 bg-dark bg-opacity-50">
+    <small>2025 Baktiyar, Yermakhan, Yerassyl. All rights reserved.</small>
 </footer>
+</body>
 </html>
