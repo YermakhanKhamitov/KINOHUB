@@ -1,0 +1,281 @@
+body {
+    background: linear-gradient(to bottom, #ff9100 0%, #000000 100%);
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 26px;
+}
+.setting-section h2 {
+    font-size: 18px;
+    color: rgb(255, 119, 0);
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 119, 0, 0.5);
+    padding-bottom: 10px;
+}
+p, .setting-item label, .form-group label {
+    font-size: 14px;
+    font-weight: normal;
+}
+.setting-section input, .setting-section select {
+    font-size: 14px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+a {
+    font-weight: bold;
+    color: rgb(255, 119, 0) !important;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+a:hover {
+    color: #ffb74d !important;
+}
+img {
+    border-radius: 15px;
+}
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ffffff;
+    margin: 20px 0;
+}
+
+#top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: rgb(255, 119, 0);
+    padding: 15px 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+.search-form {
+    display: flex;
+    align-items: center;
+}
+.search-form input[type="search"] {
+    border: 0.1px solid #000000;
+    border-radius: 20px;
+    padding: 8px 15px;
+    width: 150px;
+    background-color: transparent;
+    color: white;
+}
+.search-form button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-left: 5px;
+    color: rgb(255, 119, 0);
+}
+.site-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+.nav-buttons button {
+    background-color: transparent;
+    color: rgb(255, 119, 0);
+    border: 1px solid rgb(255, 119, 0);
+    padding: 6px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+    font-size: 12px;
+}
+.nav-buttons button:hover {
+    background-color: #333;
+    border-color: #333;
+}
+footer {
+    padding: 20px;
+    text-align: center;
+    font-size: small;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.content {
+    padding: 80px 20px 50px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.settings-area {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.setting-section {
+    padding: 10px 0;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.setting-section input[type="text"],
+.setting-section input[type="email"],
+.setting-section select {
+    border: 1px solid rgba(255, 119, 0, 0.5);
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+}
+.setting-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    margin-bottom: 15px;
+}
+
+.save-button,
+.change-password-button,
+.delete-account-button {
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 15px;
+    transition: opacity 0.3s;
+    margin-top: 10px;
+}
+.save-button {
+    background-color: rgb(255, 119, 0);
+    color: black;
+    border: none;
+}
+.change-password-button {
+    background-color: #333;
+    color: rgb(255, 119, 0);
+    border: 1px solid rgb(255, 119, 0);
+}
+.delete-account-button {
+    background-color: #900;
+    color: white;
+    border: none;
+}
+.save-button:hover,
+.change-password-button:hover,
+.delete-account-button:hover {
+    opacity: 0.8;
+}
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 25px;
+}
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 25px;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 17px;
+    width: 17px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+input:checked + .slider {
+    background-color: rgb(255, 119, 0);
+}
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    font-size: small;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+    .setting-section h2 {
+        font-size: 24px;
+    }
+
+    p, .setting-item label, .form-group label {
+        font-size: 16px;
+    }
+    .setting-section input, .setting-section select {
+        font-size: 16px;
+    }
+
+    .site-name {
+        font-size: 28px;
+    }
+    .nav-buttons button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    .search-form input[type="search"] {
+        width: 250px;
+    }
+    .save-button, .change-password-button, .delete-account-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+    .content {
+        padding: 100px 50px 50px 50px;
+    }
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 40px;
+    }
+    .setting-section h2 {
+        font-size: 26px;
+    }
+
+    p, .setting-item label, .form-group label {
+        font-size: 18px;
+    }
+    .setting-section input, .setting-section select {
+        font-size: 18px;
+    }
+    
+    .content {
+        padding: 120px 80px 80px 80px;
+    }
+}

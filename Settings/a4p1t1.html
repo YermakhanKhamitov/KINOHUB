@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="a4p1t1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Settings</title>
+</head>
+<body>
+    <div id="top-bar">
+        <a href="../MainPage/index.html" style="color: rgb(255, 119, 0);"><span class="site-name">KINOHUB</span></a>
+        <form class="search-form" action="/search" method="get">
+            <input type="search" name="query" placeholder="Search films...">
+            <button type="submit">&#x1F50D;</button>
+        </form>
+        <div class="nav-buttons">
+            <a href="../FavoritesPage/kinohubfav.html"><button>Favorites</button></a>
+            <a href="../MainPage/index.html"><button>Menu</button></a>
+        <a href="../Settings/a4p1t1.html"><button>Settings</button></a>
+            <a href="../ProfilePage/moviehub.html"><button>Profile</button></a>
+        </div>
+    </div>
+    
+    <div class="content">
+        <h1>Settings</h1>
+        
+        <div class="settings-area">
+            
+            <section class="setting-section">
+                <h2>Appearance</h2>
+                <div class="setting-item">
+                    <label for="dark-mode">Enable Dark Mode</label>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="dark-mode" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="language">App Language:</label>
+                    <select id="language">
+                        <option value="en">English</option>
+                        <option value="ru" selected>Russian</option>
+                        <option value="kz">Kazakh</option>
+                    </select>
+                </div>
+                <button class="save-button">Apply Appearance</button>
+            </section>
+            
+            <hr>
+
+            <section class="setting-section">
+                <h2>Notifications</h2>
+                <div class="setting-item">
+                    <label for="new-releases">New Releases Alerts</label>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="new-releases" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="setting-item">
+                    <label for="weekly-digest">Weekly Email Digest</label>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="weekly-digest">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="setting-item">
+                    <label for="recommendations">Personalized Recommendations</label>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="recommendations" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </section>
+
+            <hr>
+            
+            <section class="setting-section">
+                <h2>Security</h2>
+                <div class="setting-item">
+                    <label for="2fa">Two-Factor Authentication (2FA)</label>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="2fa">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <button class="change-password-button">Change Password</button>
+                <button class="delete-account-button">Delete Account</button>
+            </section>
+            
+        </div>
+    </div>
+    <hr>
+<footer>
+    <center><font size="3">2025 Baktiyar, Yermakhan, Yerassyl. All rights reserved.</font></center>
+</footer>
+</body>
+</html>
